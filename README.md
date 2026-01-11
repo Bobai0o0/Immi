@@ -1,1 +1,3 @@
 immi is a life‑aid and personal education platform designed to support immigrants as they adapt to a new country. It uses native languages, familiar accents, and cultural context to help users learn the dominant language of their new home (initially English), while navigating essential day‑to‑day systems such as healthcare, housing, employment, and education.
+
+live extension may be required to veiw
