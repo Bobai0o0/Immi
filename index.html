@@ -6,56 +6,92 @@
     <title>immi - Belong faster in a new country</title>
     <meta name="description" content="A life-aid and personal education platform for immigrants. Learn language through real situations.">
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
 
-    <header class="site-header">
-        <div class="container nav-container">
-            <a href="#" class="logo">immi</a>
-            <nav class="main-nav">
-                <a href="#features" data-i18n="nav.features">Features</a>
-                <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
-                <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
-                <a href="#impact" data-i18n="nav.impact">Impact</a>
-                <a href="#faq" data-i18n="nav.faq">FAQ</a>
-            </nav>
-            <div class="lang-wrap" aria-label="Language selector">
-                <button class="lang-icon" aria-hidden="true">🌐</button>
-                <select id="lang-select" aria-label="Select language">
-                    <option value="en">English</option>
-                    <option value="zh">中文</option>
-                    <option value="fr">Français</option>
-                    <option value="hi">हिन्दी</option>
-                </select>
-            </div>
-            <div class="nav-cta">
-                    <a href="page.html" class="btn btn-primary" data-i18n="hero.try">Try immi</a>
-            </div>
+<header class="site-header">
+    <div class="container nav-container">
+        <a href="#" class="logo">immi</a>
+        <nav class="main-nav">
+            <a href="#features" data-i18n="nav.features">Features</a>
+            <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
+            <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+            <a href="#impact" data-i18n="nav.impact">Impact</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        </nav>
+        <div class="lang-wrap" aria-label="Language selector">
+            <button class="lang-icon" aria-hidden="true">🌐</button>
+            <select id="lang-select" aria-label="Select language">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+                <option value="fr">Français</option>
+                <option value="hi">हिन्दी</option>
+            </select>
         </div>
-    </header>
+        <div class="nav-cta">
+            <a href="page.html" class="btn btn-primary" data-i18n="hero.try">Try immi</a>
+        </div>
+    </div>
+</header>
 
-    <main>
-        <section class="section hero">
+<main>
+<section class="section hero">
     <div class="glow-container">
         <div class="glow-blob glow-1"></div>
         <div class="glow-blob glow-2"></div>
     </div>
 
     <div class="container text-center">
-    <span class="pill badge-blue" data-i18n="hero.pill">Support for an accessible and familliar world</span>
-    <h1 class="hero-title" data-i18n="hero.title">Belong anywhere.</h1>
+        <span class="pill badge-blue" data-i18n="hero.pill">Support for an accessible and familiar world</span>
+        <h1 class="hero-title" data-i18n="hero.title">Belong anywhere.</h1>
         <p class="hero-subtitle" data-i18n="hero.subtitle">Meet immi - where language learning meets life navigation.<br>Get native language support, cultural context, and confidence.</p>
-                
-                <div class="hero-actions">
-                    <a href="page.html" class="btn btn-primary" data-i18n="hero.try">Try immi ⤴</a>
-                    <a href="#how-it-works" class="btn btn-secondary" data-i18n="hero.see">See how it works ⤵</a>
-                </div>
 
-                <div class="hero-visual">
-                    <img src="https://placehold.co/1200x700/f1f5f9/1e293b?text=App+Interface+Preview:+Scanner+%26+Chat" alt="immi app interface preview" class="img-responsive">
-                </div>
-            </div>
-        </section>
+        <div class="hero-actions">
+            <a href="page.html" class="btn btn-primary" data-i18n="hero.try">Try immi ⤴</a>
+            <a href="#how-it-works" class="btn btn-secondary" data-i18n="hero.see">See how it works ⤵</a>
+        </div>
+
+        <!-- Video Section -->
+        <div id="app-interface" style="position: relative; display: inline-block; margin-top: 2rem; width: 100%; max-width: 800px;">
+            <video id="app-video" autoplay muted loop playsinline
+                   style="width: 100%; height: auto; border-radius: 10px; display: block;">
+                <source src="videos/immi-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="unmute-btn" style="
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                background: rgba(0,0,0,0.6);
+                color: white;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                cursor: pointer;
+            ">🔊 Unmute</button>
+        </div>
+        <script>
+            const video = document.getElementById('app-video');
+            const btn = document.getElementById('unmute-btn');
+
+            btn.addEventListener('click', () => {
+                video.muted = false;
+                video.play();
+                btn.style.display = 'none';
+            });
+
+            video.addEventListener('loadeddata', () => {
+                console.log('Video loaded and ready to play');
+            });
+
+            video.addEventListener('error', (e) => {
+                console.error('Video failed to load', e);
+            });
+        </script>
+        <!-- End Video Section -->
+
+    </div>
+</section>
 
 <section class="trust-strip">
     <div class="container">
