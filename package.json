@@ -1,0 +1,25 @@
+{
+  "name": "immi",
+  "version": "1.0.0",
+  "description": "immi is a life‑aid and personal education platform designed to support immigrants as they adapt to a new country. It uses native languages, familiar accents, and cultural context to help users learn the dominant language of their new home (initially English), while navigating essential day‑to‑day systems such as healthcare, housing, employment, and education.",
+  "main": "face-api.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bobai0o0/Immi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Bobai0o0/Immi/issues"
+  },
+  "homepage": "https://github.com/Bobai0o0/Immi#readme",
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.30.0",
+    "dotenv": "^17.2.3"
+  }
+}
