@@ -13,14 +13,23 @@
         <div class="container nav-container">
             <a href="#" class="logo">immi</a>
             <nav class="main-nav">
-                <a href="#features">Features</a>
-                <a href="#use-cases">Use Cases</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#impact">Impact</a>
-                <a href="#faq">FAQ</a>
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
+                <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+                <a href="#impact" data-i18n="nav.impact">Impact</a>
+                <a href="#faq" data-i18n="nav.faq">FAQ</a>
             </nav>
+            <div class="lang-wrap" aria-label="Language selector">
+                <button class="lang-icon" aria-hidden="true">🌐</button>
+                <select id="lang-select" aria-label="Select language">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                    <option value="fr">Français</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+            </div>
             <div class="nav-cta">
-                    <a href="page.html" class="btn btn-primary">Try immi</a>
+                    <a href="page.html" class="btn btn-primary" data-i18n="hero.try">Try immi</a>
             </div>
         </div>
     </header>
@@ -33,13 +42,13 @@
     </div>
 
     <div class="container text-center">
-        <span class="pill badge-blue">Support for an accessible and familliar world</span>
-        <h1 class="hero-title">Belong anywhere.</h1>
-                <p class="hero-subtitle">Meet immi - where language learning meets life navigation.<br>Get native language support, cultural context, and confidence.</p>
+    <span class="pill badge-blue" data-i18n="hero.pill">Support for an accessible and familliar world</span>
+    <h1 class="hero-title" data-i18n="hero.title">Belong anywhere.</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Meet immi - where language learning meets life navigation.<br>Get native language support, cultural context, and confidence.</p>
                 
                 <div class="hero-actions">
-                    <a href="page.html" class="btn btn-primary">Try immi ⤴</a>
-                    <a href="#how-it-works" class="btn btn-secondary">See how it works ⤵</a>
+                    <a href="page.html" class="btn btn-primary" data-i18n="hero.try">Try immi ⤴</a>
+                    <a href="#how-it-works" class="btn btn-secondary" data-i18n="hero.see">See how it works ⤵</a>
                 </div>
 
                 <div class="hero-visual">
@@ -57,8 +66,8 @@
                     <span class="status-text">Platform Live</span>
                 </div>
                 <div class="trust-text-group">
-                    <h3>Built for the New Citizen</h3>
-                    <p>Designed for <strong>newcomers, refugees, and families</strong> navigating new lives.</p>
+                    <h3 data-i18n="trust.h3">Built for the New Citizen</h3>
+                    <p data-i18n="trust.p">Designed for <strong>newcomers, refugees, and families</strong> navigating new lives.</p>
                 </div>
             </div>
             
@@ -122,7 +131,7 @@
 
         <section id="features" class="section features">
             <div class="container">
-                <h2 class="section-title">Everyday superpowers.</h2>
+                <h2 class="section-title" data-i18n="features.title">Everyday superpowers.</h2>
                 <div class="grid grid-3">
                     <div class="card">
                         <div class="card-icon">📷</div>
@@ -323,14 +332,14 @@
 <section class="section cta-section">
     <div class="container">
         <div class="cta-card">
-            <div class="cta-content">
-                <span class="pill badge-alt">Limited Beta</span>
-                <h2 class="cta-title">Ready to feel at home?</h2>
-                <p class="cta-text">Join the waitlist and be the first to experience a world without language barriers. Your journey to belonging starts here.</p>
+                <div class="cta-content">
+                <span class="pill badge-alt" data-i18n="cta.title">Limited Beta</span>
+                <h2 class="cta-title" data-i18n="cta.title">Ready to feel at home?</h2>
+                <p class="cta-text" data-i18n="cta.text">Join the waitlist and be the first to experience a world without language barriers. Your journey to belonging starts here.</p>
                 
                 <form class="cta-form" onsubmit="return false;">
                     <input type="email" placeholder="Enter your email" class="cta-input">
-                    <button type="submit" class="btn btn-primary">Try immi</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="cta.button">Try immi</button>
                 </form>
                 
                 <p class="cta-subtext">No spam. Just an invitation when we're ready for you.</p>
@@ -346,13 +355,13 @@
             <div class="footer-top">
                 <div class="footer-brand">
                     <span class="logo">immi</span>
-                    <p>A life-aid for newcomers.</p>
+                    <p data-i18n="footer.brandP">A life-aid for newcomers.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Twitter/X</a>
+                    <a href="#" data-i18n="footer.privacy">Privacy</a>
+                    <a href="#" data-i18n="footer.terms">Terms</a>
+                    <a href="#" data-i18n="footer.contact">Contact</a>
+                    <a href="#" data-i18n="footer.social">Twitter/X</a>
                 </div>
             </div>
             <hr>
@@ -362,5 +371,9 @@
         </div>
     </footer>
 
+</footer>
+
+<script src="i18n.js"></script>
+<script src="lang.js"></script>
 </body>
 </html>
