@@ -1,3 +1,3 @@
-immi is a life‑aid and personal education platform designed to support immigrants as they adapt to a new country. It uses native languages, familiar accents, and cultural context to help users learn the dominant language of their new home (initially English), while navigating essential day‑to‑day systems such as healthcare, housing, employment, and education.
+immi is an assistive technology and personal education platform to support non-native language speakers' adaption to their new environment and learn, powered by ElevenLabs and a facial API. Therefore, translating and speaking into the user's native languages with progression to familiar accents naturally comforts and provides familiarity to the new language.
 
 live extension may be required to veiw
